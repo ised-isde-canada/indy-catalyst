@@ -33,6 +33,7 @@ import { UtilModule } from './util/util.module';
 
 import { environment } from '../environments/environment';
 
+
 const ROUTE_PREFIX: string = 'ROUTES.';
 
 export const appInitializerFn = (appConfig: AppConfigService) => {

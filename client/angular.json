@@ -29,6 +29,11 @@
                 "output": "/assets"
               },
               {
+                "glob": "**/*",
+                "input": "src/themes/_active/theme",
+                "output": "/theme"
+              },
+              {
                 "glob": "favicon.ico",
                 "input": "src/themes/_active",
                 "output": "/"
@@ -40,7 +45,7 @@
               }
             ],
             "styles": [
-              "src/themes/_active/styles.scss"
+              //"src/themes/_active/styles.scss"
             ],
             "scripts": []
           },

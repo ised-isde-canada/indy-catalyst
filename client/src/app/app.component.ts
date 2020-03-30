@@ -176,15 +176,39 @@ export class AppComponent implements OnInit, OnDestroy {
 
   public changeLanguage(lang: string) {
     this._localize.changeLanguage(lang);
+    //console.log( wxt.instance() );
   }
 
   public switchLanguage(evt) {
     if(this.altLang) {
       this._localize.changeLanguage(this.altLang);
+      let $wxt = this.getWxT();
+      // Lets now reset a few things that need to be
+    setTimeout(function( $ ) {
+        $('[data-reinit=changelanguage]').removeClass('wb-init wb-data-ajax-replace-inited').trigger('timerpoke.wb');
+      }, 0, $wxt['$'] );
     }
+
     if(evt) {
       evt.preventDefault();
     }
+  }
+
+  public getWxT(): object {
+    let $wb = { WxT: {}, $ : {} };
+
+    if(typeof window !== 'undefined') {
+      if ( typeof window['wb'] !== 'undefined' )
+      {
+          $wb.WxT = window['wb'];
+      }
+
+      if ( typeof window['jQuery'] !== 'undefined' )
+      {
+           $wb.$ = window['jQuery'];
+      }
+    }
+    return $wb;
   }
 
   /**
