@@ -1,0 +1,57 @@
+<header class="header-b-line">
+  <div id="wb-bnr" class="container">
+    <div class="row">
+      <section id="wb-lng" class="mt-0 mt-md-2 mb-1 col-2 col-sm-5 col-md-12 text-right float-right order-2 order-md-1">
+        <h2 class="sr-only">Language selection</h2>
+        <ul class="list-inline mb-0">
+          <li>
+            <a class="nav-item nav-link" href="#" [lang]="parent.altLang" (click)="parent.switchLanguage($event)">{{parent.altLangLabel}}</a>
+          </li>
+        </ul>
+      </section>
+      <div class="brand my-2 col-10 col-sm-7 col-md-5 col-lg-4 float-left order-1 order-md-2">
+        <a href="https://www.canada.ca/{{ parent.currentLang }}.html">
+          <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-{{ parent.currentLang }}.svg" alt="">
+          <span class="sr-only"> Government of Canada</span>
+        </a>
+      </div>
+      <section id="wb-srch" class="my-2 col-12 offset-md-1 offset-lg-0 col-md-6 col-lg-8 float-none order-3">
+        <h2 class="sr-only">Search</h2>
+        <form action="https://www.canada.ca/{{ parent.currentLang }}/sr/srb.html" method="get" name="cse-search-box" role="search">
+          <div class="form-group float-right" id="wb-srch-box">
+            <label for="wb-srch-q" class="sr-only">Search Canada.ca</label>
+            <input name="cdn" value="canada" type="hidden">
+            <input name="st" value="s" type="hidden">
+            <input name="num" value="10" type="hidden">
+            <input name="langs" value="en" type="hidden">
+            <input name="st1rt" value="1" type="hidden">
+            <input name="s5bm3ts21rch" value="x" type="hidden">
+            <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" placeholder="Search Canada.ca" size="34" maxlength="170">
+            <input type="hidden" name="_charset_" value="UTF-8">
+            <datalist id="wb-srch-q-ac"></datalist>
+          </div>
+          <div class="form-group submit">
+            <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="fas fa-search"></span><span class="sr-only">Search</span></button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+ <!--  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+    <div class="container">
+      <div class="navbar-brand">
+        <span translate>app.header.title</span>
+        <span class="tag">BETA</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        (click)="toggleNavCollapsed($event)" [attr.aria-expanded]="!navCollapsed" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngbCollapse]="navCollapsed" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#" [lang]="parent.altLang" (click)="parent.switchLanguage($event)">{{parent.altLangLabel}}</a>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+</header>
