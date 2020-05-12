@@ -1,17 +1,37 @@
 <!doctype html>
-<html class="fill-height-md" dir="ltr">
+<html class="fill-height-md">
 <head>
   <meta charset="utf-8">
-  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-      wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
   <title>OrgBook Canada</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+  <link rel="apple-touch-icon" href="/favicon-mobile.png" sizes="180x180">
+  <link rel="icon" href="/favicon-mobile.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-mobile.png" sizes="16x16" type="image/png">
+  <link rel="mask-icon" href="/favicon-mobile.png" color="#335075">
+  <link rel="icon" href="/favicon.ico">
+
+  <meta name="theme-color" content="#335075">
+  <meta name="description" content="OrgBook Canada is a searchable public directory of open verifiable data about federally incorporated organizations in Canada" />
+  <!-- Social Media Helper -->
+  <meta property="og:site_name" content="OrgBook Canada" />
+  <meta property="og:title" content="Canada's Federal Verifiable Organizations" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="${APPLICATION_URL}" />
+  <meta property="og:image" content="${APPLICATION_URL}/assets/card-image.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="667" />
+  <meta property="og:description" content="OrgBook Canada is a searchable public directory of open verifiable data about federally incorporated organizations legally registered in Canada" />
+  <!-- / Social Media Helper -->
 </head>
-<body vocab="http://schema.org/" typeof="WebPage">
-  <app-root class="fill-body">Loading...</app-root>
+<body>
+  <app-root class="fill-body">
+    <div class="row mt-5">
+      <div class="col-sm-12 page-load">
+        <div class="loading-indicator"><div class="alt-text">Loading ...</div></div>
+      </div>
+    </div>
+  </app-root>
 </body>
 </html>

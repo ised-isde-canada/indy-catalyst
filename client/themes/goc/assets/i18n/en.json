@@ -1,172 +1,131 @@
 {
   "ROUTES": {
-    "home": "home"
+    "contact": "connect",
+    "topic": "organization"
   },
   "app": {
-    "breadcrumb": "Home",
+    "title": "OrgBook Canada Beta",
+    "title-prefix": "OrgBook Canada Beta | ",
     "header": {
-      "title": "OrgBook",
-      "logo-alt-text": "OrgBook Logo"
-    },
-    "footer": {
-      "disclaimer": "Disclaimer",
-      "privacy": "Privacy",
-      "accessibility": "Accessibility",
-      "copyright": "Copyright",
-      "contact": "Contact Us"
-    },
-    "title": "OrgBook Beta",
-    "title-prefix": "OrgBook Beta | "
-  },
-  "address": {
-    "registered-office": "Registered Office"
-  },
-  "connect": {
-    "breadcrumb": "Connect with us",
-    "contact-title": "Contact Us",
-    "title": "Connect with us"
-  },
-  "contact": {
-    "email": "Email Address",
-    "phone": "Phone",
-    "phone-business": "Business Phone",
-    "skype": "Skype Address",
-    "website": "Website Address"
-  },
-  "cred": {
-    "addresses": "Addresses",
-    "attributes": "Attributes",
-    "breadcrumb": "Credential Information",
-    "claims-proven": "Claims Proven and Verified",
-    "contact": "Contact",
-    "cred-type": "Credential Type",
-    "crypto-data": "Cryptographic Proof Data",
-    "date": "Credential Effective Date",
-    "description": "Description",
-    "empty-attribute": "Not Available",
-    "end-date": "End Date",
-    "expired": "Expired",
-    "expired-message": "This credential is expired and no longer verifiable.",
-    "history-link": "See history",
-    "inactive": "Archived",
-    "inactive-message": "This credential has been issued for archival purposes only. It does not represent a currently active registration, permit, or licence.",
-    "issuer": "Issuer",
-    "last-issued": "Last Issued",
-    "last-updated": "Last Updated",
-    "latest-link": "Go to the latest credential",
-    "names": "Names",
-    "not-verified": "Not verified",
-    "proof-details": "Credential and Proof Details",
-    "proof-of-claims": "Proof of Claims",
-    "requesting-proof": "Requesting proof...",
-    "schema-info": "Credential Schema",
-    "select-cred-type": "(Select type)",
-    "select-issuer": "(Select issuer)",
-    "start-date": "Credential Effective Date",
-    "status": "Revocation Status",
-    "timeline-title": "Timeline",
-    "topic-title": "Credentials",
-    "verify-button-label": "Verify Credential",
-    "view-link": "View credential",
-    "whats-this-link": "What's this?",
-    "verified": "Verified",
-    "verify-breadcrumb": "Credential Verification",
-    "verify-link": "See data for this credential",
-    "verify-status": "Verification Status:"
-  },
-  "general": {
-    "about-site-title": "About this site",
-    "date-entered": "Date Entered",
-    "date-issued": "Credential Issued Date",
-    "display-cards": "Cards",
-    "display-list": "List",
-    "display-timeline": "Timeline",
-    "hide-filters": "Hide Filters",
-    "date-not-available": "Not Available",
-    "demo-site": "Demo Site",
-    "details": "Details",
-    "feedback-link": "Submit Feedback",
-    "feedback-title": "Submit Feedback",
-    "feedback-button-label": "Send Feedback",
-    "link-copied": "Link copied to clipboard",
-    "links-title": "External Links and Resources",
-    "map-link": "Show on map",
-    "next-link": "Next",
-    "none": "None",
-    "not-found": "This record could not be located.",
-    "other-error": "An unknown error occurred.",
-    "period-current": "Current",
-    "period-historical": "Archived",
-    "prev-link": "Previous",
-    "share-link": "Share",
-    "share-title": "Share Link",
-    "show-filters": "Show Filters",
-    "show-inactive": "Show Archived",
-    "show-revoked": "Show Revoked",
-    "skip-link-about": "Skip to \"About this site\"",
-    "skip-link-content": "Skip to main content",
-    "status-nonrevoked": "Not Revoked",
-    "status-revoked": "Revoked",
-    "status-any": "Any",
-    "verified": "Verified"
-  },
-  "home": {
-    "about-title": "About the OrgBook",
-    "breadcrumb": "Home",
-    "title": "Welcome to The OrgBook",
-    "title-certs": "Verifiable credentials held",
-    "title-orgs": "Active legal entities",
-    "title-this-week": "Credentials added this week"
-  },
-  "issuer": {
-    "breadcrumb": "Issuer Service",
-    "cred-types": "Credential Types",
-    "did": "DID",
-    "end-date": "End Date",
-    "logo-image": "Logo Image",
-    "start-date": "Effective Date",
-    "website": "Issuer Website"
+      "title": "OrgBook Canada",
+      "logo-alt-text": "Government Canada Logo"
+    }
   },
   "name": {
-    "doing-business-as": "Doing Business As",
-    "incorporation": "Incorporation",
-    "legal-name": "Legal Name",
-    "registration": "Registration",
-    "registration.registries.ca": "Registration"
+    "registration.cc.orgbook.canada.ca": "Registration",
+    "relationship.cc.orgbook.canada.ca": "Relationship",
+    "address.cc.orgbook.canada.ca": "Address",
+    "business_number.cra.orgbook.canada.ca": "Business Number",
+    "verified_person.cc.orgbook.canada.ca": "Verified Person",
+    "verified-person.cc.orgbook.canada.ca": "Verified Person",
+    "person_relationship.cc.orgbook.canada.ca": "Relationship",
+    "org_relationship.cc.orgbook.canada.ca": "Relationship"
   },
-  "not-found": {
-    "breadcrumb": "Not Found",
-    "title": "Page not found",
-    "error": "This page could not be located. Please check the URL or follow the link below.",
-    "return-link-title": "Return to the home page"
+  "attribute": {
+    "effective_dates": "Effective Dates",
+    "effective_date-short": "Credential",
+    "entity_name_assumed_effective": "Assumed Name Effective Date",
+    "entity_name_effective": "Name Effective Date",
+    "entity_name_effective-short": "Name Effective",
+    "entity_status": "Registration Status",
+    "entity_status_effective": "Status Effective Date",
+    "entity_status_effective-short": "Status Effective",
+    "entity_type": "Registration Type",
+    "home_jurisdiction": "Home Jurisdiction",
+    "name_short": "Name",
+    "registered_jurisdiction": "Registered Jurisdiction",
+    "registration_date": "Registration Date",
+    "status_short": "Status",
+    "relationship": "Relationship",
+    "relationship_description": "Description",
+    "relationship_status": "Status",
+    "relationship_status_effective": "Status Effective",
+    "associated_registration_name": "Associated Registration Name",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email_address": "Email Address",
+    "phone_number": "Phone Number",
+    "business_number": "Business Number"
   },
-  "person": {
-    "director": "Director"
+  "category": {
+    "address_type": {
+      "CCROA": "Registered Office Address"
+    },
+    "canadian_residency": {
+      "YES": "Yes",
+      "NO": "No"
+    },
+    "entity_status": {
+      "ACT": "Active",
+      "HIS": "Historical"
+    },
+    "entity_type": {
+      "CC1": "Distributing corporation",
+      "CC2": "Non-distributing corporation with 50 or fewer shareholders",
+      "CC3": "Non-distributing corporation with more than 50 shareholders",
+      "CC4": "Not identified",
+      "CC5": "Soliciting",
+      "CC6": "Non-Soliciting",
+      "CC7": "Distributes securities",
+      "CC8": "Does not distribute securities"
+    },
+    "relationship": {
+      "Owns": "Owns",
+      "IsOwned": "Is Owned By",
+      "DIR": "Director",
+      "OFF": "Officer",
+      "DEL": "Delegate",
+      "ADMIN": "Administrator",
+      "FIO": "Firm Individual Owner"
+    },
+    "relationship_status": {
+      "ACT": "Active",
+      "HIS": "Historical"
+    }
   },
-  "schema": {
-    "name": "Schema Name",
-    "version": "Schema Version"
+  "home": {
+    "about-title": "About OrgBook Canada",
+    "title": "Government of Canada's Verifiable Organizations"
   },
-  "search": {
-    "breadcrumb": "Search",
-    "by-name": "Search by Name",
-    "by-location": "Search by Location",
-    "input-label": "Organization Name or Registration ID",
-    "no-results": "No results",
-    "placeholder": "search",
-    "prompt": "Please enter your search query above in order to proceed.",
-    "records-prefix": "Records ",
-    "results-error": "Your query could not be completed at this time.",
-    "results-title": "Search Results",
-    "return-link": "Back to Search",
-    "running": "Performing search ...",
-    "title": "Find an organization"
+  "legislation": {
+      "CC1": "Canada Corporations Act Part I - Private",
+      "CC2": "Canada Corporations Act Part I - Public",
+      "CC3": "Canada Corporations Act - Part II",
+      "CC4": "Canada Cooperative Associations Act",
+      "CC5": "Pension Fund Societies Act",
+      "CC6": "Canada Business Corporations Act",
+      "CC7": "Boards of Trade Act - Part I",
+      "CC8": "Boards of Trade Act - Part II",
+      "CC9": "Special Act of Parliament",
+      "CC10": "More than 1 Act Applicable",
+      "CC11": "Bank Act",
+      "CC12": "Canada Cooperatives Act",
+      "CC13": "Other",
+      "CC14": "Canada Not-for-profit Corporations Act"
   },
-  "topic": {
-    "breadcrumb": "Organization",
-    "related-to": "Related To",
-    "return-link": "Back to Organization",
-    "source-id": "Registration ID",
-    "view-link": "Show Details"
+  "jurisdiction": {
+    "general": {
+      "FD": "Federal",
+      "OT": "Other",
+      "US": "USA"
+    },
+    "province": {
+      "AB": "Alberta",
+      "BC": "British Columbia",
+      "MB": "Manitoba",
+      "NB": "New Brunswick",
+      "NF": "Newfoundland and Labrador",
+      "NT": "Northwest Territories",
+      "NS": "Nova Scotia",
+      "NU": "Nunavut",
+      "ON": "Ontario",
+      "PE": "Prince Edward Island",
+      "QC": "Quebec",
+      "SK": "Saskatchewan",
+      "YT": "Yukon Territory"
+    },
+    "country": {
+      "CA": "Canada"
+    }
   }
 }
