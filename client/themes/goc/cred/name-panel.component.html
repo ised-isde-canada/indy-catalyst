@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-6 name-title">
         <div class="type-label" *ngIf="link">{{record.typeLabel | translate}}</div>
-        <h2 class="h4 my-0 name-label">
+        <h2 class="h3 my-0 name-label">
           <span class="type-label" *ngIf="!link">{{record.typeLabel | translate}}</span>
           <a [routerLink]="record.link | localize" class="body-link cred-link name" *ngIf="link">{{name.text}}</a>
           <div class="badge badge-warning" *ngIf="name && name.inactive" translate>cred.inactive</div>
@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="card-body form-body">
-    <div class="row form-group">
+    <div class="row form-group" id="tranistional">
       <div class="col-sm-6">
         <label class="control-label" translate>attribute.entity_type</label>
         <div class="form-field">
@@ -39,19 +39,23 @@
         </div>
         <label class="control-label" translate>attribute.registration_date</label>
         <div class="form-field">
-          <span class="fas fa-calendar-alt"></span> <attribute-view [record]="record.attribute_map.registration_date" format="date"></attribute-view>
+          <attribute-view [record]="record.attribute_map.registration_date" format="date"></attribute-view>
         </div>
       </div>
     </div>
+    <script>if (window.location.href.indexOf('verified_person.cc.orgbook.canada.ca') > -1 ) { document.getElementById('tranistional').remove(); }</script>
     <div class="row mt-3 mt-lg-0">
       <div class="col col-md-10 col-lg-8">
         <label class="control-label" translate>general.details</label>
         <div class="form-field">
           <div class="row mb-2 mb-sm-1">
             <label class="col-md-4 mb-0" translate>cred.date</label>
-            <div class="col-md-8"  *ngIf="name.last_updated > '0100-01-01'">
+            <div class="col-md-8"  *ngIf="name.last_updated > '0100-01-01'; else ifBlank">
               <span class="claim-info date">{{name.last_updated | dateFormat: 'effectiveDateTime'}}</span>
             </div>
+            <ng-template #ifBlank>
+              <div class="col-sm-8">{{'cred.empty-attribute' | translate}}</div>
+            </ng-template>
           </div>
           <div class="row mb-2 mb-sm-1">
             <label class="col-md-4 mb-0" translate>attribute.entity_name_effective</label>

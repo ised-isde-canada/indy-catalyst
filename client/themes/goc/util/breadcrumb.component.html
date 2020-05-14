@@ -1,18 +1,12 @@
-<nav id="wb-bc" property="breadcrumb container">
-    <h2>{{ 'gcweb.here-title' | translate }}</h2>
-    <div class="container">
-      <ol class="row breadcrumb mrgn-tp-md">
-        <li>
-          <a href="{{ 'gcweb.bc-home.link' | translate }}" translate>gcweb.bc-home.text</a>
-        </li>
-        <li >
-          <a [routerLink]="'/' | localize" translate>app.breadcrumb</a>
-        </li>
-        <ng-template *ngFor="let bc of breadcrumbs">
-          <li *ngIf="bc.url">
-            <a tabIndex="0" [title]="bc.label | translate" [routerLink]="[bc.url]">{{ bc.label | translate }}</a>
-          </li>
-        </ng-template>
-      </ol>
-    </div>
+<nav class="breadcrumb page-breadcrumb">
+  <div class="breadcrumb-item">
+    <a tabIndex="0" [title]="'home.breadcrumb' | translate" href="https://www.canada.ca" translate>home.breadcrumb</a>
+  </div>
+  <div class="breadcrumb-item">
+    <a tabIndex="0" [title]="'app.breadcrumb' | translate" [routerLink]="'/' | localize" translate>app.breadcrumb</a>
+  </div>
+  <div class="breadcrumb-item" [ngClass]="{'breadcrumb-current': bc.current}" *ngFor="let bc of breadcrumbs">
+    <a *ngIf="bc.url" tabIndex="0" [title]="bc.label | translate" [routerLink]="[bc.url]">{{ bc.label | translate }}</a>
+    <span *ngIf="!bc.url" class="breadcrumb-text">{{ bc.label | translate }}</span>
+  </div>
 </nav>

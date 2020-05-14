@@ -1,15 +1,19 @@
-<section id="cred-form" class="page-min-height" *ngIf="(result$ | async) as result">
+<section id="cred-form" class="container page-min-height" *ngIf="(result$ | async) as result">
+  <app-breadcrumb></app-breadcrumb>
   <loading-indicator [loading]="result.loading"></loading-indicator>
   <error-message [error]="result.error"></error-message>
 
   <div class="row mt-4" *ngIf="result.data as record">
     <div class="col-sm-12" *ngIf="(verify$ | async) as verify">
-      <h1 class="page-title" id="contentStart">{{record.credential_type.description}}</h1>
+      <h1 class="page-title" id="contentStart" tabindex="-1">{{'name.' + record.credential_type.description | translate}}</h1>
 
       <div class="row title-links mb-3">
         <div class="col">
           <a [routerLink]="record.topic.link | localize" class="title-link back-link">
             <span class="fa fa-arrow-left left"></span>{{'topic.return-link' | translate}}</a>
+        </div>
+        <div class="col text-right">
+          <app-sharelink [link]="record.link"></app-sharelink>
         </div>
       </div>
 
@@ -19,22 +23,20 @@
           <div class="col-md-4 order-md-1">
             <div class="card card-primary mb-3">
               <div class="card-body">
-                <h5>What is a credential?</h5>
-
+                <h5 class="h3">What is a credential?</h5>
                 <p>
                 A credential is held by an organization, for example a permit or a business licence.
                 </p>
-
-                <h5>What is an issuer?</h5>
-
+                <h5 class="h3">What is an issuer?</h5>
                 <p>
-                An issuer issues credentials to organizations listed in the OrgBook BC. For example,
-                BC Registries issues credentials for companies incorporated in British Columbia.
+                An issuer issues credentials to organizations listed in the OrgBook Canada. For example,
+                Corporations Canada issues credentials for companies incorporated in Canada.
                 </p>
-
-                <p class="mb-0">
-                <a [routerLink]="['./verify'] | localize" class="body-link switch-verify">{{ 'cred.verify-link' | translate }}</a>
-                </p>
+                <div class="row form-group" *ngIf="! record.revoked">
+                  <p class="mb-0">
+                  <a [routerLink]="['./verify'] | localize" class="body-link switch-verify">{{ 'cred.verify-link' | translate }}</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -77,7 +79,7 @@
               <div class="col-sm-12">
                 <label class="control-label" translate>cred.cred-type</label>
                 <div class="form-field">
-                  {{record.credential_type.description}}
+                  {{'name.' + record.credential_type.description | translate}}
                 </div>
               </div>
             </div>
@@ -103,11 +105,20 @@
               </div>
             </div>
 
+            <div class="row form-group" *ngIf="record.addresses?.length">
+              <div class="col-sm-12">
+                <div class="form-field address-list" *ngFor="let address of record.addresses">
+                  <label class="control-label" translate>{{address.addressType}}</label>
+                  <address-view [record]="address"></address-view>
+                </div>
+              </div>
+            </div>
+
             <div class="row form-group" *ngIf="record.attributes?.length">
               <div class="col-sm-12">
                 <label class="control-label" translate>cred.attributes</label>
                 <div class="form-field attributes-outer">
-                  <attribute-list [records]="record.attributes"></attribute-list>
+                  <attribute-list [records]="record.attributes_ext"></attribute-list>
                 </div>
               </div>
             </div>
@@ -116,9 +127,12 @@
               <div class="col-sm-12">
                 <label class="control-label" translate>cred.start-date</label>
                 <!-- filter out effective dates that don't make sense, set when we can't determine a "proper" effective date -->
-                <div class="form-field" *ngIf="record.effective_date > '0100-01-01'">
+                <div class="form-field" *ngIf="record.effective_date > '0100-01-01'; else ifBlank">
                   <span class="claim-info date">{{record.effective_date | dateFormat: 'effectiveDateTime'}}</span>
                 </div>
+                <ng-template #ifBlank>
+                  <div class="col-sm-8">{{'cred.empty-attribute' | translate}}</div>
+                </ng-template>
               </div>
             </div>
 

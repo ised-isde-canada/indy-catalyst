@@ -1,42 +1,37 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
-
+<!doctype html>
+<html class="fill-height-md">
 <head>
-  <base href="/">
   <meta charset="utf-8">
-  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-      wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-  <title>Orgbook Canada</title>
-  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <title>OrgBook Canada</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+  <link rel="apple-touch-icon" href="/favicon-mobile.png" sizes="180x180">
+  <link rel="icon" href="/favicon-mobile.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-mobile.png" sizes="16x16" type="image/png">
+  <link rel="mask-icon" href="/favicon-mobile.png" color="#335075">
+  <link rel="icon" href="/favicon.ico">
 
-  <link href="/theme/resources/favicon.ico" rel="icon" type="image/x-icon" />
-
-  <link rel="stylesheet" href="/theme/css/theme.min.css" />
-  <link rel="stylesheet" href="/theme/css/wet-boew-overrides.min.css" />
-  <link rel="stylesheet" href="/theme/css/messages.min.css" />
-  <link rel="stylesheet" href="/theme/css/small-component.min.css" />
-  <link rel="stylesheet" href="/theme/css/font-awesome.min.css" />
-  <style type="text/css" media="screen">
-    .loading-indicator {  display: flex; justify-content: center; align-items: center; height: 100vh; text-indent: -1000px;  }
-  </style>
-  <noscript><link rel="stylesheet" href="/theme/css/noscript.min.css" /></noscript>
+  <meta name="theme-color" content="#335075">
+  <meta name="description" content="OrgBook Canada is a searchable public directory of open verifiable data about federally incorporated organizations in Canada" />
+  <!-- Social Media Helper -->
+  <meta property="og:site_name" content="OrgBook Canada" />
+  <meta property="og:title" content="Canada's Federal Verifiable Organizations" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="${APPLICATION_URL}" />
+  <meta property="og:image" content="${APPLICATION_URL}/assets/card-image.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="667" />
+  <meta property="og:description" content="OrgBook Canada is a searchable public directory of open verifiable data about federally incorporated organizations legally registered in Canada" />
+  <!-- / Social Media Helper -->
 </head>
-
-  <body vocab="http://schema.org/" typeof="WebPage">
-      <app-root class="fill-body">
-        <div class="row mt-5">
-          <div class="col-sm-12 page-load">
-            <div class="loading-indicator">
-              <div class="alt-text">Loading ...</div>
-            </div>
-          </div>
-        </div>
-      </app-root>
-	  <!-- Scripts --->
-	  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	  <script src="/theme/wet-boew.js"></script>
-	  <script src="/theme/theme.js"></script>
-  </body>
+<body>
+  <app-root class="fill-body">
+    <div class="row mt-5">
+      <div class="col-sm-12 page-load">
+        <div class="loading-indicator"><div class="alt-text">Loading ...</div></div>
+      </div>
+    </div>
+  </app-root>
+</body>
 </html>

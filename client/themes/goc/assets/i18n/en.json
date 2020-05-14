@@ -1,275 +1,161 @@
 {
-	"app": {
-		"breadcrumb": "OrgBook Canada",
-		"title": "OrgBook Canada",
-		"header": {
-			"title": "Federal Corporation Register",
-			"logo-alt-text": "Government of Canada Logo"
-		},
-		"footer": {
-			"contact-us": {
-				"text": "Contact us",
-				"link": "https://www.canada.ca/en/contact.html"
-			},
-			"departments-agencies": {
-				"text": "Departments and agencies",
-				"link": "https://www.canada.ca/en/government/dept.html"
-			},
-			"ps-and-military": {
-				"text": "Public service and military",
-				"link": "https://www.canada.ca/en/government/publicservice.html"
-			},
-			"news": {
-				"text": "News",
-				"link": "https://www.canada.ca/en/news.html"
-			},
-			"treaties": {
-				"text": "Treaties, laws and regulations",
-				"link": "https://www.canada.ca/en/government/system/laws.html"
-			},
-			"reporting": {
-				"text": "Government-wide reporting",
-				"link": "https://www.canada.ca/en/transparency/reporting.html"
-			},
-			"pm": {
-				"text": "Prime Minister",
-				"link": "https://pm.gc.ca/eng"
-			},
-			"about-government": {
-				"text": "About government",
-				"link": "https://www.canada.ca/en/government/system.html"
-			},
-			"open-government": {
-				"text": "Open government",
-				"link": "https://open.canada.ca/en"
-			},
-			"social-media": {
-				"text": "Social media",
-				"link": "https://www.canada.ca/en/social.html"
-			},
-			"mobile-applications": {
-				"text": "Mobile applications",
-				"link": "https://www.canada.ca/en/mobile.html"
-			},
-			"about-canada": {
-				"text": "About Canada",
-				"link": "https://www.canada.ca/en/government/about.html"
-			},
-			"terms-conditions": {
-				"text": "Terms and conditions",
-				"link": "https://www.canada.ca/en/transparency/terms.html"
-			},
-			"privacy-statement": {
-				"text": "Privacy",
-				"link": "https://www.canada.ca/en/transparency/privacy.html"
-			}
-		},
-		"site-menu": {
-			"jobs": {
-				"text": "Jobs and the workplace",
-				"link": "https://www.canada.ca/en/services/jobs.html"
-			},
-			"immigate": {
-				"text": "Immigration and citizenship",
-				"link": "https://www.canada.ca/en/services/immigration-citizenship.html"
-			},
-			"voyage": {
-				"text": "Travel and tourism",
-				"link": "https://travel.gc.ca/"
-			},
-			"enterprise": {
-				"text": "Business and industry",
-				"link": "https://www.canada.ca/en/services/business.html"
-			},
-			"benefits": {
-				"text": "Benefits",
-				"link": "https://www.canada.ca/en/services/benefits.html"
-			},
-			"health": {
-				"text": "Health",
-				"link": "https://www.canada.ca/en/services/health.html"
-			},
-			"taxes": {
-				"text": "Taxes",
-				"link": "https://www.canada.ca/en/services/taxes.html"
-			},
-			"environment": {
-				"text": "Environment and natural resources",
-				"link": "https://www.canada.ca/en/services/environment.html"
-			},
-			"security": {
-				"text": "National security and defence",
-				"link": "https://www.canada.ca/en/services/defence.html"
-			},
-			"culture": {
-				"text": "Culture, history and sport",
-				"link": "https://www.canada.ca/en/services/culture.html"
-			},
-			"justice": {
-				"text": "Policing, justice and emergencies",
-				"link": "https://www.canada.ca/en/services/policing.html"
-			},
-			"transport": {
-				"text": "Transport and infrastructure",
-				"link": "https://www.canada.ca/en/services/transport.html"
-			},
-			"world": {
-				"text": "Canada and the world",
-				"link": "http://international.gc.ca/world-monde/index.aspx?lang=eng"
-			},
-			"money": {
-				"text": "Money and finances",
-				"link": "https://www.canada.ca/en/services/finance.html"
-			},
-			"science": {
-				"text": "Science and innovation",
-				"link": "https://www.canada.ca/en/services/science.html"
-			}
-		}
-	},
-	"attribute": {
-		"aboriginal_status": "Aboriginal Status",
-		"entity_status": "Supplier Status",
-		"org_type": "Organization Type"
-	},
-	"category": {
-		"aboriginal_supplier": {
-			"Y": "Yes",
-			"N": "No"
-		},
-		"entity_status": {
-			"Active": "Active",
-			"Deleted": "Deleted",
-			"Incomplete": "Incomplete",
-			"Suspended": "Suspended",
-			"Disbarred": "Disbarred",
-			"Unavailable": "Unavailable",
-			"Reassigned": "Reassigned",
-      "BC Company": "BC Company"
-		},
-		"org_type": {
-			"individual": "Individual",
-			"partnership": "Partnership",
-			"corporation": "Corporation",
-			"other": "Other"
-		}
-	},
-	"cert": {
-		"breadcrumb": "Certification Details",
-		"effective-date": "Issued",
-		"expiry-date": "Expires",
-		"inactive-message": "This credential is inactive:",
-		"issuer": "Issuer",
-		"issuer-website": "Issuer Website",
-		"related-certs": "Related Credentials",
-		"requesting-proof": "Requesting proof of credential ...",
-		"return-link": "Back to Certification Details",
-		"verify-button-label": "Verify Credential",
-		"whats-this-link": "What's this?",
-		"verify-status": "Verification Status:"
-	},
-	"gcweb": {
-		"about-title": "About this site",
-		"report-problem": {
-			"text": "Report a problem on this page",
-			"link": "https://www.canada.ca/en/report-problem.html"
-		},
-		"bc-home": {
-			"text": "Home",
-			"link": "https://www.canada.ca/en.html"
-		},
-		"menu-link": "/gcweb/ajax/sitemenu-v2-en.html",
-		"about-govt-title": "About government",
-		"date-modified": "Date modified:",
-		"here-title": "You are here:",
-		"language-sel-title": "Language selection",
-		"page-top-link": "Top of Page",
-		"search-menus-title": "Search and menus",
-		"search-placeholder": "Search Canada.ca",
-		"search-title": "Search",
-		"search-post": "https://www.canada.ca/en/sr/srb.html",
-		"search-website": "Search website",
-		"skip-about-link": "Skip to \"About government\"",
-		"skip-main-link": "Skip to main content",
-		"topics-title": "Topics menu",
-		"symbol-government": "Symbol of the Government of Canada"
-	},
-	"general": {
-		"none": "None",
-		"map-link": "Show on map",
-		"next-link": "Next",
-		"prev-link": "Previous",
-		"verified": "Verified"
-	},
-	"home": {
-		"title": "OrgBook Canada",
-		"title-orgs": "Active federal corporations",
-		"title-certs": "Verifiable credentials held",
-		"title-this-week": "Credentials added this week",
-		"lead": "OrgBook Canada is a searchable public directory of open verifiable data about federal corporations in Canada",
-		"guides-and-help": {
-			"title": "Guides and help",
-			"about-orgbook-link": "About the OrgBook Canada (beta)",
-			"about-orgbook-url": "#TODO",
-			"privacy-notice-link": "Privacy notice",
-			"privacy-notice-url": "#TODO",
-			"help-link": "Help",
-			"help-url": "#TODO"
-		},
-		"about":
-		{
-			"title" : "About the OrgBook",
-			"blurb" : "This new service uses cutting-edge blockchain-based technology, which provides the foundation to help GC move to a digital economy.\n\nOrgBook Canada supports our goal to streamline and modernize services for small and medium sized enterprises (SME) as part of our broader Digital Government Strategy.\n\nRight now, you can use OrgBook Canada to quickly verify if an organization is legally registered to do business in Canada as a corporation.\n\nIn the future, verifiable data about other organizations types such as sole proprietors and societies will be added. As well, other important verifable data such as the permits, licenses, and other accreditations these organizations hold will be added to OrgBook Canada."
-		},
-		"contact-us": {
-			"title": "Contact us",
-			"email": "E-mail",
-			"email-link": "support@buyandsell.gc.ca"
-		},
-		"related-services": {
-			"title": "Related services and information",
-			"supplier-registration-link": "Supplier Registration Information (SRI)",
-			"supplier-registration-url": "#TODO",
-			"buyandsell-link": "buyandsell.gc.ca",
-			"buyandsell-url": "https://buyandsell.gc.ca"
-		}
-	},
-	"issuer": {
-		"breadcrumb": "Issuer Details",
-		"cert-types": "Permit and Licence Types",
-		"effective-date": "Effective Date",
-		"expiry-date": "Expiry Date",
-		"website": "URL"
-	},
-	"not-found": {
-		"breadcrumb": "Not Found",
-		"title": "Page not found",
-		"error": "This page could not be located. Please check the URL or follow the link below.",
-		"return-link-title": "Return to the home page"
-	},
-	"org": {
-		"breadcrumb": "Supplier Certifications",
-		"certs-title": "Supplier Certifications",
-		"dba": "Doing Business As",
-		"effective-date": "Effective Date",
-		"identifier": "Supplier PBN",
-		"location": "Location",
-		"locations": "Locations",
-		"return-link": "Back to Supplier Certifications",
-		"type": "Organization Type"
-	},
-	"search": {
-		"title": "Search for a Federal Corporation",
-		"by-cert": "Certification",
-		"by-location": "Location",
-		"by-name": "Name",
-		"by-pbn": "PBN",
-		"no-results": "No results",
-		"placeholder": "search",
-		"results-title": "{{elm}} federal corporations fit your search",
-		"return-link": "Back to Search"
-	},
-	"records": {
-		"title" : "Current Statistics"
-	}
+  "ROUTES": {
+    "contact": "connect",
+    "topic": "organization"
+  },
+  "app": {
+    "title": "OrgBook Canada Beta",
+    "title-prefix": "OrgBook Canada Beta | ",
+    "header": {
+      "title": "OrgBook Canada",
+      "logo-alt-text": "Government Canada Logo"
+    },
+    "breadcrumb": "Orgbook Canada"
+  },
+  "search": {
+    "title": "Search for a Federal Corporation",
+    "input-label": "Organization Name or Corporation Number"
+  },
+  "home": {
+    "about-title": "About the OrgBook",
+    "breadcrumb": "Home",
+    "title": "Welcome to OrgBook Canada",
+    "title-certs": "Verifiable credentials held",
+    "title-orgs": "Active legal entities",
+    "title-this-week": "Credentials added this week"
+  },
+  "name": {
+    "registration.cc.orgbook.canada.ca": "Incorporation",
+    "relationship.cc.orgbook.canada.ca": "Relationship",
+    "address.cc.orgbook.canada.ca": "Address",
+    "organization.address.cc.orgbook.canada.ca": "Registerd Office Address",
+    "person.address.cc.orgbook.canada.ca": "Address",
+    "business_number.cra.orgbook.canada.ca": "Business Number",
+    "verified-person.cc.orgbook.canada.ca": "Verified Person",
+    "verified_person.cc.orgbook.canada.ca": "Verified Person",
+    "person_relationship.cc.orgbook.canada.ca": "Relationship",
+    "org_relationship.cc.orgbook.canada.ca": "Relationship"
+  },
+  "attribute": {
+    "effective_dates": "Effective Dates",
+    "effective_date-short": "Credential",
+    "entity_name_assumed_effective": "Assumed Name Effective Date",
+    "entity_name_effective": "Name Effective Date",
+    "entity_name_effective-short": "Name Effective",
+    "entity_status": "Status",
+    "entity_status_effective": "Effective Date",
+    "entity_status_effective-short": "Effective",
+    "entity_type": "Incorporation Type",
+    "home_jurisdiction": "Home Jurisdiction",
+    "name_short": "Name",
+    "registered_jurisdiction": "Registered Jurisdiction",
+    "registration_date": "Registration Date",
+    "status_short": "Status",
+    "relationship": "Relationship",
+    "relationship_description": "Description",
+    "relationship_status": "Status",
+    "relationship_status_effective": "Status Effective",
+    "associated_registration_name": "Associated Registration Name",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email_address": "Email Address",
+    "phone_number": "Phone Number",
+    "business_number": "Business Number"
+  },
+  "category": {
+    "address_type": {
+      "CCROA": "Registered Office Address"
+    },
+    "canadian_residency": {
+      "YES": "Yes",
+      "NO": "No"
+    },
+    "entity_status": {
+      "ACT": "Active",
+      "HIS": "Historical",
+      "1": "Active",
+      "2": "Active - Intent to Dissolve Filed",
+      "3": "Active - Dissolution Pending (Non-compliance)",
+      "4": "Active - Discontinuance Pending",
+      "9": "Inactive - Amalgamated",
+      "10": "Inactive - Discontinued",
+      "11": "Dissolved",
+      "19": "Inactive"
+    },
+    "entity_type": {
+      "CC1": "Distributing corporation",
+      "CC2": "Non-distributing corporation with 50 or fewer shareholders",
+      "CC3": "Non-distributing corporation with more than 50 shareholders",
+      "CC4": "Not identified",
+      "CC5": "Soliciting",
+      "CC6": "Non-Soliciting",
+      "CC7": "Distributes securities",
+      "CC8": "Does not distribute securities"
+    },
+    "relationship": {
+      "Owns": "Owns",
+      "IsOwned": "Is Owned By",
+      "DIR": "Director",
+      "OFF": "Officer",
+      "DEL": "Delegate",
+      "ADMIN": "Administrator",
+      "FIO": "Firm Individual Owner"
+    },
+    "relationship_status": {
+      "ACT": "Active",
+      "HIS": "Historical"
+    }
+  },
+  "home": {
+    "about-title": "About OrgBook Canada",
+    "title": "Government of Canada's Verifiable Organizations"
+  },
+  "topic": {
+    "breadcrumb": "Organization",
+    "related-to": "Related To",
+    "return-link": "Back to Organization",
+    "source-id": "Corporation Number",
+    "view-link": "Show Details"
+  },
+  "legislation": {
+      "CC1": "Canada Corporations Act Part I - Private",
+      "CC2": "Canada Corporations Act Part I - Public",
+      "CC3": "Canada Corporations Act - Part II",
+      "CC4": "Canada Cooperative Associations Act",
+      "CC5": "Pension Fund Societies Act",
+      "CC6": "Canada Business Corporations Act",
+      "CC7": "Boards of Trade Act - Part I",
+      "CC8": "Boards of Trade Act - Part II",
+      "CC9": "Special Act of Parliament",
+      "CC10": "More than 1 Act Applicable",
+      "CC11": "Bank Act",
+      "CC12": "Canada Cooperatives Act",
+      "CC13": "Other",
+      "CC14": "Canada Not-for-profit Corporations Act"
+  },
+  "jurisdiction": {
+    "general": {
+      "FD": "Federal",
+      "OT": "Other",
+      "US": "USA"
+    },
+    "province": {
+      "AB": "Alberta",
+      "BC": "British Columbia",
+      "MB": "Manitoba",
+      "NB": "New Brunswick",
+      "NF": "Newfoundland and Labrador",
+      "NT": "Northwest Territories",
+      "NS": "Nova Scotia",
+      "NU": "Nunavut",
+      "ON": "Ontario",
+      "PE": "Prince Edward Island",
+      "QC": "Quebec",
+      "SK": "Saskatchewan",
+      "YT": "Yukon Territory"
+    },
+    "country": {
+      "CA": "Canada"
+    }
+  }
 }
