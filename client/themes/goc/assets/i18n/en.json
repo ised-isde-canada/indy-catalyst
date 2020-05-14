@@ -9,15 +9,30 @@
     "header": {
       "title": "OrgBook Canada",
       "logo-alt-text": "Government Canada Logo"
-    }
+    },
+    "breadcrumb": "Orgbook Canada"
+  },
+  "search": {
+    "title": "Search for a Federal Corporation",
+    "input-label": "Organization Name or Corporation Number"
+  },
+  "home": {
+    "about-title": "About the OrgBook",
+    "breadcrumb": "Home",
+    "title": "Welcome to OrgBook Canada",
+    "title-certs": "Verifiable credentials held",
+    "title-orgs": "Active legal entities",
+    "title-this-week": "Credentials added this week"
   },
   "name": {
-    "registration.cc.orgbook.canada.ca": "Registration",
+    "registration.cc.orgbook.canada.ca": "Incorporation",
     "relationship.cc.orgbook.canada.ca": "Relationship",
     "address.cc.orgbook.canada.ca": "Address",
+    "organization.address.cc.orgbook.canada.ca": "Registerd Office Address",
+    "person.address.cc.orgbook.canada.ca": "Address",
     "business_number.cra.orgbook.canada.ca": "Business Number",
-    "verified_person.cc.orgbook.canada.ca": "Verified Person",
     "verified-person.cc.orgbook.canada.ca": "Verified Person",
+    "verified_person.cc.orgbook.canada.ca": "Verified Person",
     "person_relationship.cc.orgbook.canada.ca": "Relationship",
     "org_relationship.cc.orgbook.canada.ca": "Relationship"
   },
@@ -27,10 +42,10 @@
     "entity_name_assumed_effective": "Assumed Name Effective Date",
     "entity_name_effective": "Name Effective Date",
     "entity_name_effective-short": "Name Effective",
-    "entity_status": "Registration Status",
-    "entity_status_effective": "Status Effective Date",
-    "entity_status_effective-short": "Status Effective",
-    "entity_type": "Registration Type",
+    "entity_status": "Status",
+    "entity_status_effective": "Effective Date",
+    "entity_status_effective-short": "Effective",
+    "entity_type": "Incorporation Type",
     "home_jurisdiction": "Home Jurisdiction",
     "name_short": "Name",
     "registered_jurisdiction": "Registered Jurisdiction",
@@ -57,7 +72,15 @@
     },
     "entity_status": {
       "ACT": "Active",
-      "HIS": "Historical"
+      "HIS": "Historical",
+      "1": "Active",
+      "2": "Active - Intent to Dissolve Filed",
+      "3": "Active - Dissolution Pending (Non-compliance)",
+      "4": "Active - Discontinuance Pending",
+      "9": "Inactive - Amalgamated",
+      "10": "Inactive - Discontinued",
+      "11": "Dissolved",
+      "19": "Inactive"
     },
     "entity_type": {
       "CC1": "Distributing corporation",
@@ -86,6 +109,13 @@
   "home": {
     "about-title": "About OrgBook Canada",
     "title": "Government of Canada's Verifiable Organizations"
+  },
+  "topic": {
+    "breadcrumb": "Organization",
+    "related-to": "Related To",
+    "return-link": "Back to Organization",
+    "source-id": "Corporation Number",
+    "view-link": "Show Details"
   },
   "legislation": {
       "CC1": "Canada Corporations Act Part I - Private",
