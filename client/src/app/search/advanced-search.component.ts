@@ -50,7 +50,7 @@ export class AdvancedSearchComponent implements OnInit {
 
     this.credTypeSelected = {
       value: null,
-      description: 'Any credential type',
+      description: 'Any attribute type',
     };
 
     const fg = new FormGroup({
@@ -74,9 +74,9 @@ export class AdvancedSearchComponent implements OnInit {
     this.$credentialTypeOptions = $categories;
     /* TODO: Parameterize these to include a method of defining the input option */
     const searchOptions = [
-      { label: 'name', helper: 'Search by the name of the organization.' },
-      { label: 'credential type', helper: 'Search by a specific type of credential.' },
-      { label: 'historical credentials', helper: 'Include results that have expired or are no longer active.' },
+      { label: 'name', helper: 'Search by the attribute name.' },
+      { label: 'attribute type', helper: 'Search by a specific type of attribute.' },
+      { label: 'historical attributes', helper: 'Include results that have expired or are no longer active.' },
     ];
     this.searchOptions = searchOptions;
   }
