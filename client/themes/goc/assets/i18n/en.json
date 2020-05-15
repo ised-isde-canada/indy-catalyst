@@ -7,34 +7,34 @@
     "title": "OrgBook Canada Beta",
     "title-prefix": "OrgBook Canada Beta | ",
     "header": {
-      "title": "OrgBook Canada",
+      "title": "Welcome to OrgBook Canada",
       "logo-alt-text": "Government Canada Logo"
     },
     "breadcrumb": "Orgbook Canada"
   },
   "search": {
-    "title": "Search for a Federal Corporation",
-    "input-label": "Organization Name or Corporation Number"
+    "records-prefix": "Businesses ",
+    "input-label": "Business Name or Business Number",
+    "title": "Find a Business"
   },
   "home": {
-    "about-title": "About the OrgBook",
-    "breadcrumb": "Home",
-    "title": "Welcome to OrgBook Canada",
-    "title-certs": "Verifiable credentials held",
-    "title-orgs": "Active legal entities",
-    "title-this-week": "Credentials added this week"
+    "about-title": "About OrgBook Canada",
+    "title": "OrgBook Canada"
   },
   "name": {
     "registration.cc.orgbook.canada.ca": "Incorporation",
     "relationship.cc.orgbook.canada.ca": "Relationship",
     "address.cc.orgbook.canada.ca": "Address",
-    "organization.address.cc.orgbook.canada.ca": "Registered Office Address",
+    "organization.address.cc.orgbook.canada.ca": "Registered Office",
     "person.address.cc.orgbook.canada.ca": "Address",
     "business_number.cra.orgbook.canada.ca": "Business Number",
     "verified-person.cc.orgbook.canada.ca": "Verified Person",
     "verified_person.cc.orgbook.canada.ca": "Verified Person",
     "person_relationship.cc.orgbook.canada.ca": "Relationship",
     "org_relationship.cc.orgbook.canada.ca": "Relationship"
+  },
+  "cred": {
+    "topic-title": "History"
   },
   "attribute": {
     "effective_dates": "Effective Dates",
@@ -64,7 +64,7 @@
   },
   "category": {
     "address_type": {
-      "CCROA": "Registered Office Address"
+      "CCROA": "Registered Office"
     },
     "canadian_residency": {
       "YES": "Yes",
@@ -106,10 +106,6 @@
       "HIS": "Historical"
     }
   },
-  "home": {
-    "about-title": "About OrgBook Canada",
-    "title": "Government of Canada's Verifiable Organizations"
-  },
   "topic": {
     "breadcrumb": "Organization",
     "related-to": "Related To",
@@ -118,20 +114,20 @@
     "view-link": "Show Details"
   },
   "legislation": {
-      "CC1": "Canada Corporations Act Part I - Private",
-      "CC2": "Canada Corporations Act Part I - Public",
-      "CC3": "Canada Corporations Act - Part II",
-      "CC4": "Canada Cooperative Associations Act",
-      "CC5": "Pension Fund Societies Act",
-      "CC6": "Canada Business Corporations Act",
-      "CC7": "Boards of Trade Act - Part I",
-      "CC8": "Boards of Trade Act - Part II",
-      "CC9": "Special Act of Parliament",
-      "CC10": "More than 1 Act Applicable",
-      "CC11": "Bank Act",
-      "CC12": "Canada Cooperatives Act",
-      "CC13": "Other",
-      "CC14": "Canada Not-for-profit Corporations Act"
+    "CC1": "Canada Corporations Act Part I - Private",
+    "CC2": "Canada Corporations Act Part I - Public",
+    "CC3": "Canada Corporations Act - Part II",
+    "CC4": "Canada Cooperative Associations Act",
+    "CC5": "Pension Fund Societies Act",
+    "CC6": "Canada Business Corporations Act",
+    "CC7": "Boards of Trade Act - Part I",
+    "CC8": "Boards of Trade Act - Part II",
+    "CC9": "Special Act of Parliament",
+    "CC10": "More than 1 Act Applicable",
+    "CC11": "Bank Act",
+    "CC12": "Canada Cooperatives Act",
+    "CC13": "Other",
+    "CC14": "Canada Not-for-profit Corporations Act"
   },
   "jurisdiction": {
     "general": {
